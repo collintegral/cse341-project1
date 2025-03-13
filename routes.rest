@@ -11,11 +11,11 @@ POST http://localhost:3000/users HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Ed",
-    "lastName": "Debebik",
-    "email": "ed.debebik@email.com",
-    "favoriteColor": "Yellow",
-    "birthday": "11/2/1999"
+    "firstName": "Chris",
+    "lastName": "Topher",
+    "email": "christopher@email.com",
+    "favoriteColor": "Baby Blue",
+    "birthday": "01/02/1999"
 }
 
 ###UPDATE USER
