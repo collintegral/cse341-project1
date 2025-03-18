@@ -16,6 +16,10 @@ app.use(bodyParser.json());
 app.use('/', require('./routes'));
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
+process.on('uncaughtException', (err, origin) => {
+    console.log(process.stderr.id, `Caught Exception ${err}\nException Origin: ${origin}`);
+})
+
 mongo.initDb((err) => {
     if(err) {
         console.log(err);
